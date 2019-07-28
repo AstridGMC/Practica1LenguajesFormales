@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One&display=swap" rel="stylesheet">
+    <title>IDENTIFICADOR</title>
+</head>
+<body>
+    <div>
+        <header>
+            <h1 align="center">MI IDENTIFICADOR DE CARACTERES</h1>
+        </header>
+        <section  class ="cuerpo">
+            <article >
+                    <h2 >Ingresa tu palabra</h2>
+                    <div >
+                        <input  id = "textoVerificar" type="text" value=texto  onFocus="if (textoVerificar.value == textoEliminar) textoVerificar.value='';"/>
+                        <button onclick="eliminarTexto(),validarExpresion(),agregarLista()"> identificar </button>
+                    </div>
+            </article>
+            <article>
+                <h3>HISTORIAL DE REGISTROS</h2>
+                <ul>
+                    
+                    <p id = "historial" >   
+                    </p>
+                    
+                    <p id = "historialErrores">
+                        Errores:<br>
+                        
+                        </p>
+                   
+                </ul>
+            </article>
+        </section>
+    
+    </div>
+    <script type="text/javascript" src="./Script.js"></script>
+</body>
+</html>
